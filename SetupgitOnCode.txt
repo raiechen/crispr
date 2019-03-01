@@ -1,0 +1,13 @@
+1. download git to the computer
+2. sign up github.com
+3. create a new repo on github 
+4. copy the url from github just created
+5. open up MS code
+6. shift + ctrl + p
+7. type git clone
+8. paste the repo URL
+9. then it will ask where you want to store this folder locally. So create a folder.
+10. create a python file 
+11. try to commit it, but pop up error as need to set your email
+12. on terminal type git config user.email "raiechen@gmail.com"
+13. Add it. Then on the bottom left, right next to master, click publish the change
