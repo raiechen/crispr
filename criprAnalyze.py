@@ -1,5 +1,6 @@
 '''
 This is going to filter out the sequence that is too short or too long (< 210 or > 410 bp)
+Change WTSEQ to input
 '''
 import pandas as pd
 import numpy as np
@@ -106,4 +107,3 @@ for f, i in zip(files_fasta, range(len(files_fasta))):
     s1.to_excel(writer, 'Sheet1')
     s2.to_excel(writer, 'Sheet2')
     writer.save()
-    
