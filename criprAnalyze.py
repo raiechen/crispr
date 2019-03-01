@@ -6,7 +6,6 @@ import numpy as np
 import os, sys
 from Bio import SeqIO
 
-
 WTSEQENCE = "AGACATAAAGGGACTCACCTCATGGGTGTAAGTACGAACAGGGACTCCAAAAGCTCTGGCTAGTCCAAAGTCTGCTAGCTTGA"
 NUMOFNT = len(WTSEQENCE)
 
@@ -14,7 +13,7 @@ path = os.getcwd()
 files = os.listdir(path)
 files_fasta = [f for f in files if f[-5:] == 'fasta']
 
-for f, i in zip(files_fasta, range(len(files_fasta))):
+for f in files_fasta:
     
     seqdic = {}
     start_dna_seq = 'GAGAAAAA'
