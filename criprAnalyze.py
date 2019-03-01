@@ -1,14 +1,14 @@
 '''
 This is going to filter out the sequence that is too short or too long (< 210 or > 410 bp)
-Change WTSEQ to input
 '''
 import pandas as pd
 import numpy as np
 import os, sys
 from Bio import SeqIO
 
-NUMOFNT = 83
+
 WTSEQENCE = "AGACATAAAGGGACTCACCTCATGGGTGTAAGTACGAACAGGGACTCCAAAAGCTCTGGCTAGTCCAAAGTCTGCTAGCTTGA"
+NUMOFNT = len(WTSEQENCE)
 
 path = os.getcwd()
 files = os.listdir(path)
